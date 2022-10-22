@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <img src="x white.png" class="fas" height="25px" width="25px" onclick="closeMenu()">
+                    </ul>
+                    <img src="HAM.png" class="fas" height="25px" width="25px" onclick="openMenu()">
+                </nav>
+                <div class="header-text">
+                    <p>Aspiring Full Stack Developer</p>
+                    <h1>Hi, I'm <span>Mohammed</span><br>Shezaad From Manchester</h1>
+                </div>
+            </div>
+        </div>
+
+       <!--About me section-->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="dolluser.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>
+                            Hello World! I'm Mohammed, a aspiring Full-Stack Developer based from Manchester. From a legal career to lines of code on a web page. I love combining the worlds of logic and creative design to make eye-catching websites and applications.<br>
+                            <br>
+
+The move towards increasing inclusivity and diversity in the industry through representation is of importance to me.
+<br><br>
+I'm excited to make the leap and continue refining my skills with the right company. Drop me a line or your favourite restaurant in Manchester in the contact form below.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link">Skills</p>
+                        </div>
+                        <div class="tab-contents">
+                            <ul>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>JAVASCRIPT</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!-- portfolio -->
+
+<div id="portfolio"> 
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+          <img src="breakout.png">
+          <div class="layer">
+              <h3>Breakout Arcade Game</h3>
+              <p>Whats the highest you can get in 60 secs</p>
+          </div> 
+        </div>
+        <div class="work">
+            <img src="lather.png">
+            <div class="layer">
+                <h3>Auto-Detailing Website</h3>
+                <p>Buy products for car care!</p>
+            </div> 
+          </div>
+          <div class="work">
+            <img src="calculator.jpg">
+            <div class="layer">
+                <h3>Calculator</h3>
+                <p></p>
+            </div> 
+          </div>
+    </div>
+<a href="" class="btn">See More</a>
+    </div>
+</div>
+
+<!--contact me fam-->
+
+<div id="contact"> 
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>mohammed.shezaad@hotmail.com</p>
+            </div>
+            <a href="MS CV.pdf" class="btn btn2" download="">Download CV</a>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openMenu(){
+            sidemenu.style.right = "0"
+        }
+        function closeMenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
